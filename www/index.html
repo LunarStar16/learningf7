@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html class="dark">
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/framework7-bundle.min.css"> 
+        <link rel="stylesheet" href="css/style.css">
+        <title>Learning Framework7</title>
+    </head>
+    <body class="dark">
+        <div id="app">
+        <!-- panel components go here -->
+         <!-- Right panel, with cover effect -->
+            <div class="panel panel-right panel-cover">
+                ... panel content goes here ...
+            </div>
+        
+            <div class="view view-main">
+            <!-- component will apply to all pages in view -->
+            <!-- Bottom Toolbar -->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner text-align-center padding-horizontal">
+                <a href="/" class="link">Home</a>
+                <a href="/page2/" class="link">Movies</a>
+                <a href="/page3/" class="link">TV Shows</a>
+                </div>
+            </div>    
+                <div class="page dark" data-name="home">
+                <!-- component is fixed to the page -->
+                    
+                    <div class="page-content">
+
+                        <!-- <a href="#" class="panel-open" data-panel="right">OPEN</a> -->
+                        <div class="card title">
+                            <header class="card-header text-color-primary">
+                                Fall Recommendations
+                            </header>
+                            <p class="card-content card-content-padding">
+                                Things to watch for the spooky fall season
+                            </p>
+                        </div>
+                        
+                        <a href="/hocuspocus/" class="link">
+                            <div class="card">
+                                
+                                <img src="img/images/hocuspocus.jpg">
+                                <div class="card-header text-color-primary">Hocus Pocus</div>
+                                    <div class="card-content card-content-padding">
+                                        A classic movie about witches coming back from the dead due to a virgin lighting a black flame cnadle and wreaking havoc on the town of Salem. A great witchy film to start off fall.
+                                    </div>
+                                
+                            </div>
+                        </a>
+                          
+                        <a href="/sabrina/" class="link">
+                            <div class="card">
+
+                                <img src="img/images/sabrina.jpg">
+                                    
+                                <div class="card-header text-color-primary">
+                                    The Chilling Adventures of Sabrina  
+                                </div>
+                                <div class="card-content card-content-padding">
+                                    A dark take on 'sabrina the teenage witch' from the archie comics, a great series to begin watching in the spooky fall season.
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="/witchesofeastend/" class="link">
+                            <div class="card">
+
+                                <img src="img/images/witchesofeastend.jpg">
+                                <div class="card-header text-color-primary">Witches of East End</div>
+                                    <div class="card-content card-content-padding">
+                                        A show about witches cursed and exiled from their homeland, struggling to survive in the mortal world, a great witchy show for fall, a great book too if you prefer reading.
+                                    </div>
+
+                            </div>
+                        </a>
+
+                        <a href="/casper/" class="link">
+                            <div class="card">
+                                <img src="img/images/casper.jpg">
+                                <div class="card-header text-color-primary">Casper</div>
+                                    <div class="card-content card-content-padding">
+                                        A friendly ghost named Casper to accompany you in the fall season, about a family moving into a haunted home and befriending a ghost named Casper and trying to survive the scares of Caspers family.
+                                    </div>
+                            </div>
+                        </a>
+
+                        <a href="/buffy/" class="link">
+                            <div class="card">
+                                <img src="img/images/buffy.jpg">
+                                <div class="card-header text-color-primary">Buffy the Vampire Slayer</div>
+                                    <div class="card-content card-content-padding">
+                                        A show to fill youre fall vampire needs, Buffy came to slay... vampires and other various monsters.
+                                    </div>
+                            </div>
+                        </a>
+
+                        <a href="/schoolgoodevil/" class="link">
+                            <div class="card">
+                                
+                                <img src="img/images/schoolgoodevil.jpg">
+                                    <div class="card-header text-color-primary">The School for Good and Evil</div>
+                                        <div class="card-content card-content-padding">
+                                            A film about how the fairytales we've read are real and how the heros and villains of those stories are trained at this school for good and evil. it's not yet released but the trailer looks stunning and already has me excited to watch and even read the books.
+                                        </div>
+                        
+                            </div>
+                        </a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="cordova.js"></script>
+        <script src="js/framework7-bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
